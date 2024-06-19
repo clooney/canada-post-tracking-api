@@ -1,12 +1,12 @@
-Australia Post Tracking API - Go
+Canada Post Tracking API - Go
 ================================
-Use Go to track Australia Post shipments with Australia Post Tracking API.
+Use Go to track Canada Post shipments with Canada Post Tracking API.
 
 Features
 --------
-- Real-time Australia Post tracking.
-- Batch Australia Post tracking.
-- Other features to manage your Australia Post tracking.
+- Real-time Canada Post tracking.
+- Batch Canada Post tracking.
+- Other features to manage your Canada Post tracking.
 
 Installation
 ------------
@@ -32,7 +32,7 @@ To use this API, you need to generate your API key.
 - Give a name to your API key, and click "Save" .
 
 
-Then, start to track your Australia Post shipments.
+Then, start to track your Canada Post shipments.
 
 Usage
 ----------
@@ -58,7 +58,7 @@ Create a tracking (Real-time tracking):
       
       params := trackingmore.CreateTrackingParams{
         TrackingNumber: "0301006785462006320995",
-        CourierCode:    "australia-post",
+        CourierCode:    "canada-post",
       }      
 
       result, err := cli.CreateTracking(context.Background(), params)
@@ -93,11 +93,11 @@ Create trackings (Max. 40 tracking numbers create in one call):
       params := []trackingmore.CreateTrackingParams{
           {
           TrackingNumber: "LK201223662AU",
-          CourierCode:    "australia-post",
+          CourierCode:    "canada-post",
           },
           {
           TrackingNumber: "LH290032509AU",
-          CourierCode:    "australia-post",
+          CourierCode:    "canada-post",
           },
       }   
 
